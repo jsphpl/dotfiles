@@ -2,4 +2,5 @@
 *.pyc
 local/*
 !local/.gitkeep
+!local/rc.d/.gitkeep
 .DS_Store

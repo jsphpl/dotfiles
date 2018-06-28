@@ -18,6 +18,16 @@
     - oh-my-zsh
     - locale
 
+- name: Find additional files in {{ rc_d_local_source }}
+  command: "ls {{ rc_d_local_source }}"
+  register: rc_d_local_files
+
+- name: Install additional files from {{ rc_d_local_source }} into '{{ rc_d_dir }}'
+  template:
+    src: "{{ rc_d_local_source }}/{{ item }}"
+    dest: "{{ rc_d_dir }}/{{ item }}"
+  with_items: "{{ rc_d_local_files.stdout_lines }}"
+
 - name: Install main '{{ rc_script }}' script
   template:
     src: rc.sh.j2
