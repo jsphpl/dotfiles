@@ -1,1 +1,6 @@
 # {{ ansible_managed }}
+
+# Run a vagrant command for homestead from anywhere (eg. `homestead up`)
+function homestead() {
+    ( cd ~/work/homestead && vagrant $* )
+}
