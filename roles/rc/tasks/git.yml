@@ -2,3 +2,8 @@
   template:
     src: gitconfig.j2
     dest: "$HOME/.gitconfig"
+
+- name: Install global .gitignore file
+  template:
+    src: gitignore.j2
+    dest: "$HOME/.gitignore"

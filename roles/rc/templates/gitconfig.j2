@@ -2,5 +2,8 @@
 # This is Git's per-user configuration file.
 
 [user]
-name = {{ identity.name }}
-email = {{ identity.email }}
+        name = {{ identity.name }}
+        email = {{ identity.email }}
+
+[core]
+        excludesfile = {{ lookup('env','HOME') }}/.gitignore
