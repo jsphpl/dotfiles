@@ -1,0 +1,3 @@
+- name: Set mac system defaults
+  command: defaults write {{ item.domain }} {{ item.key }} -{{ item.type }} {{ item.value }}
+  with_items: "{{ mac_defaults }}"

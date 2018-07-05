@@ -2,84 +2,111 @@ mac_defaults:
   # Finder settings
   - domain: com.apple.finder
     key: _FXSortFoldersFirst
-    value: 1
+    type: bool
+    value: true
   - domain: com.apple.finder
     key: ShowExternalHardDrivesOnDesktop
-    value: 0
+    type: bool
+    value: false
   - domain: com.apple.finder
     key: ShowHardDrivesOnDesktop
-    value: 0
+    type: bool
+    value: false
   - domain: com.apple.finder
     key: ShowMountedServersOnDesktop
-    value: 0
+    type: bool
+    value: false
   - domain: com.apple.finder
     key: ShowRemovableMediaOnDesktop
-    value: 0
+    type: bool
+    value: false
   - domain: com.apple.finder
     key: NewWindowTarget
+    type: string
     value: '"PfHm"'
   - domain: com.apple.finder
     key: NewWindowTargetPath
-    value: '"file:///Users/jsphpl/"'
+    type: string
+    value: "\"file://{{ lookup('env','HOME') }}/\""
 
   # Disable Siri
   - domain: com.apple.siricore.fides
-    key: DES Lottery Win Override Enabled
-    value: 0
+    key: '"DES Lottery Win Override Enabled"'
+    type: bool
+    value: false
   - domain: com.apple.siricore.fides
-    key: DES Recording Enabled
-    value: 0
+    key: '"DES Recording Enabled"'
+    type: bool
+    value: false
   - domain: com.apple.Siri
     key: StatusMenuVisible
-    value: 0
+    type: bool
+    value: false
 
   # Keyboard repeat rate and delay
-  - domain: -g
+  - domain: NSGlobalDomain
     key: InitialKeyRepeat
-    value: -int 15
-  - domain: -g
+    type: int
+    value: 15
+  - domain: NSGlobalDomain
     key: KeyRepeat
-    value: -int 2
+    type: int
+    value: 2
 
   # Trackpad settings
-  - domain: -g
+  - domain: NSGlobalDomain
     key: com.apple.trackpad.scaling
+    type: int
     value: 2
   - domain: com.apple.AppleMultitouchTrackpad
     key: Clicking
-    value: 1
+    type: bool
+    value: true
   - domain: com.apple.AppleMultitouchTrackpad
     key: TrackpadThreeFingerHorizSwipeGesture
+    type: int
     value: 0
   - domain: com.apple.AppleMultitouchTrackpad
     key: TrackpadThreeFingerVertSwipeGesture
+    type: int
     value: 0
   - domain: com.apple.AppleMultitouchTrackpad
     key: TrackpadThreeFingerTapGesture
+    type: int
     value: 0
   - domain: com.apple.AppleMultitouchTrackpad
     key: TrackpadThreeFingerDrag
-    value: 1
+    type: bool
+    value: true
+  - domain: com.apple.AppleMultitouchTrackpad
+    key: Dragging
+    type: bool
+    value: true
 
   # Prevent creation of .DS_Store files on network drives
   - domain: com.apple.desktopservices
     key: DSDontWriteNetworkStores
+    type: bool
     value: true
 
   # Dock
   - domain: com.apple.dock
     key: autohide
-    value: 1
+    type: bool
+    value: true
   - domain: com.apple.dock
     key: orientation
-    value: left
+    type: string
+    value: '"left"'
 
   # Allow tab-navigation of dialog window actions
   - domain: NSGlobalDomain
     key: AppleKeyboardUIMode
+    type: int
     value: 3
 
   # Hide Pastebot Menubar and Dock icon
   - domain: com.tapbots.Pastebot2Mac
     key: UIVisibilityState
+    type: int
     value: 10

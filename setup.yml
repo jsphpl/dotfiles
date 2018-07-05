@@ -7,7 +7,7 @@
     - variables/paths.yml
     - variables/shell.yml
     - variables/software.yml
-    - variables/sysconfig.yml
+    - variables/defaults.yml
   vars_prompt:
     - name: ansible_become_pass
       prompt: Sudo password needed for some tasks
@@ -23,5 +23,5 @@
       tags: [software, composer]
     - role: rc
       tags: [rc]
-    - role: sysconfig
-      tags: [sysconfig]
+    - role: defaults
+      tags: [defaults]
