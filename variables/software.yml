@@ -22,6 +22,7 @@ homebrew_apps:
   - mariadb
   - mitmproxy
   - nginx
+  - nodenv
   - nmap
   - php
   - pkg-config
@@ -37,6 +38,7 @@ homebrew_apps:
 # Apps installed through Homebrew Cask
 homebrew_cask_apps:
   - android-sdk
+  - appcleaner
   - arduino
   - boostnote
   - devdocs
@@ -53,6 +55,7 @@ homebrew_cask_apps:
   - poedit
   - postico
   - tableplus  # in testing stage
+  - transmission
   - spectacle
   - sequel-pro
   - sublime-text
