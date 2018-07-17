@@ -1,6 +1,6 @@
 # {{ ansible_managed }}
 
-# Source all scripts from {{ rc_d_dir }}
-for file in {{ rc_d_dir }}/*; do
+# Source all scripts from {{ dot_d_dir }}
+for file in {{ dot_d_dir }}/*; do
     source $file
 done

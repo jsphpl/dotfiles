@@ -1,5 +1,6 @@
 dot_dir: '$HOME/.dot'
-rc_d_dir: '{{ dot_dir }}/dot.d'
 rc_script: '{{ dot_dir }}/dot.sh'
+dot_d_dir: '{{ dot_dir }}/dot.d'
 
-rc_d_local_source: 'local/rc.d'
+dot_d_local_source: 'dot.d.local'
+dot_d_source: 'dot.d'

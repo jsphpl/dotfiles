@@ -1,6 +1,5 @@
 *.retry
 *.pyc
-local/*
-!local/.gitkeep
-!local/rc.d/.gitkeep
+dot.d.local/*
+!dot.d.local/.gitkeep
 .DS_Store

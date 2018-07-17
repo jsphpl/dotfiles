@@ -4,29 +4,35 @@
     state: directory
   with_items:
     - "{{ dot_dir }}"
-    - "{{ rc_d_dir }}"
+    - "{{ dot_d_dir }}"
 
-- name: Install rc files into '{{ rc_d_dir }}'
+- name: Install default rc files into '{{ dot_d_dir }}'
   template:
     src: "{{ item }}.j2"
-    dest: "{{ rc_d_dir }}/{{ item }}"
+    dest: "{{ dot_d_dir }}/{{ item }}"
   with_items:
     - aliases
-    - android
-    - functions
     - paths
-    - oh-my-zsh
-    - locale
 
-- name: Find additional files in {{ rc_d_local_source }}
-  command: "ls {{ rc_d_local_source }}"
-  register: rc_d_local_files
+- name: Find additional files in {{ dot_d_source }}
+  command: "ls {{ dot_d_source }}"
+  register: dot_d_files
 
-- name: Install additional files from {{ rc_d_local_source }} into '{{ rc_d_dir }}'
+- name: Install additional files from {{ dot_d_source }} into '{{ dot_d_dir }}'
   template:
-    src: "{{ rc_d_local_source }}/{{ item }}"
-    dest: "{{ rc_d_dir }}/{{ item }}"
-  with_items: "{{ rc_d_local_files.stdout_lines }}"
+    src: "{{ dot_d_source }}/{{ item }}"
+    dest: "{{ dot_d_dir }}/{{ item }}"
+  with_items: "{{ dot_d_files.stdout_lines }}"
+
+- name: Find additional files in {{ dot_d_local_source }}
+  command: "ls {{ dot_d_local_source }}"
+  register: dot_d_local_files
+
+- name: Install additional files from {{ dot_d_local_source }} into '{{ dot_d_dir }}'
+  template:
+    src: "{{ dot_d_local_source }}/{{ item }}"
+    dest: "{{ dot_d_dir }}/{{ item }}"
+  with_items: "{{ dot_d_local_files.stdout_lines }}"
 
 - name: Install main '{{ rc_script }}' script
   template:
