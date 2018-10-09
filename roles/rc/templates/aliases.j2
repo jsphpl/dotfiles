@@ -1,4 +1,4 @@
 # {{ ansible_managed }}
 {% for alias in aliases %}
-alias {{ alias }}="{{ aliases[alias] }}"
+alias {{ alias }}='{{ aliases[alias] }}'
 {% endfor %}
