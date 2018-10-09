@@ -11,6 +11,7 @@ homebrew_apps:
   - avr-binutils
   - avr-gcc
   - avrdude
+  - awscli
   - composer
   - dnsmasq
   - ffmpeg
@@ -29,6 +30,7 @@ homebrew_apps:
   - postgresql
   - pv
   - qrencode
+  - tree
   - watchman
   - wget
   - wp-cli
@@ -54,6 +56,7 @@ homebrew_cask_apps:
   - openscad
   - poedit
   - postico
+  - prusa-slic3r
   - tableplus  # in testing stage
   - transmission
   - spectacle
@@ -67,7 +70,6 @@ homebrew_cask_apps:
 # Apps installed through Mac app store
 mas_installed_apps:
   - { id: 1179623856, name: "Pastebot" }
-  - { id: 732710998, name: "Enpass" }
   - { id: 747648890, name: "Telegram" }
   - { id: 803453959, name: "Slack" }
   - { id: 960276676, name: "Taurine" }
