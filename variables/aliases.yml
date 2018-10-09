@@ -2,4 +2,4 @@ aliases:
   puf: "./vendor/bin/phpunit --filter "
   myip: "curl https://api.ipify.org"
   gpsu: "git push --set-upstream origin `git symbolic-ref --short HEAD`"
-  gdmb: 'git branch --merged | egrep -v "(^\*|master|develop|dev|staging|production)" | xargs git branch -d'
+  gdmb: 'git branch --merged | egrep -v \"(^\*|master|develop|dev|staging|production)\" | xargs git branch -d'
