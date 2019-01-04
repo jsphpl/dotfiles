@@ -11,8 +11,8 @@
     src: "{{ item }}.j2"
     dest: "{{ dot_d_dir }}/{{ item }}"
   with_items:
-    - aliases
-    - paths
+    - 10-aliases
+    - 10-paths
 
 - name: Find additional files in {{ dot_d_source }}
   command: "ls {{ dot_d_source }}"

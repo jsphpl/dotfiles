@@ -2,3 +2,4 @@ extra_paths:
   - $HOME/bin
   - /usr/local/bin
   - $HOME/.composer/vendor/bin
+  - $HOME/.cargo/bin
