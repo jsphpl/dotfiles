@@ -15,16 +15,15 @@ homebrew_apps:
   - composer
   - dnsmasq
   - ffmpeg
-  - gradle
-  - heroku
+  - heroku/brew/heroku
   - htop
   - imagemagick
   - lsusb
   - mariadb
   - mitmproxy
   - nginx
-  - nodenv
   - nmap
+  - nodenv
   - php
   - pkg-config
   - postgresql
@@ -41,15 +40,15 @@ homebrew_apps:
 homebrew_cask_apps:
   - android-sdk
   - appcleaner
-  - arduino
   - boostnote
   - devdocs
   - eloston-chromium  # ungoogled
-  - firefox-developer-edition
+  - firefox-nightly
   - gimp
   - gpg-suite
   - iterm2
   - java
+  - keeweb
   - keybase
   - nextcloud
   - ngrok
@@ -57,12 +56,12 @@ homebrew_cask_apps:
   - poedit
   - postico
   - prusa-slic3r
-  - tableplus  # in testing stage
-  - transmission
-  - spectacle
   - sequel-pro
+  - spectacle
   - sublime-text
+  - tableplus  # in testing stage
   - the-unarchiver
+  - transmission
   - vagrant
   - virtualbox
   - vlc
@@ -76,11 +75,11 @@ mas_installed_apps:
   - { id: 496437906, name: "Shush" }
 
 # Locally copied mac apps
-mac_apps:
-  - path: /Volumes/nifty/Cloud/_shared/Mac Apps/sketch-43.2-39069.zip
-    creates: Sketch.app
-  - path: /Volumes/nifty/Cloud/_shared/Mac Apps/Radio_Silence_2.3.pkg
-    creates: Radio Silence.app
+mac_apps: []
+  # - path: /Volumes/nifty/Cloud/_shared/Mac Apps/sketch-43.2-39069.zip
+  #   creates: Sketch.app
+  # - path: /Volumes/nifty/Cloud/_shared/Mac Apps/Radio_Silence_2.3.pkg
+  #   creates: Radio Silence.app
 
 # Global composer packages
 composer_packages:

@@ -1,10 +1,6 @@
 mac_defaults:
   # Finder settings
   - domain: com.apple.finder
-    key: _FXSortFoldersFirst
-    type: bool
-    value: true
-  - domain: com.apple.finder
     key: ShowExternalHardDrivesOnDesktop
     type: bool
     value: false
@@ -28,6 +24,14 @@ mac_defaults:
     key: NewWindowTargetPath
     type: string
     value: "\"file://{{ lookup('env','HOME') }}/\""
+  - domain: com.apple.finder
+    key: _FXSortFoldersFirst
+    type: int
+    value: 1
+  - domain: com.apple.finder
+    key: _FXSortFoldersFirstOnDesktop
+    type: int
+    value: 1
 
   # Disable Siri
   - domain: com.apple.siricore.fides
@@ -92,12 +96,12 @@ mac_defaults:
   # Dock
   - domain: com.apple.dock
     key: autohide
-    type: bool
-    value: true
+    type: int
+    value: 1
   - domain: com.apple.dock
     key: orientation
     type: string
-    value: '"left"'
+    value: left
 
   # Allow tab-navigation of dialog window actions
   - domain: NSGlobalDomain
@@ -110,3 +114,9 @@ mac_defaults:
     key: UIVisibilityState
     type: int
     value: 10
+  
+  # Activity Monitor
+  - domain: com.apple.ActivityMonitor
+    key: UpdatePeriod
+    type: int
+    value: 1
