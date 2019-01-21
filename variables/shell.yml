@@ -6,3 +6,7 @@ zsh_theme: avit
 zsh_plugins:
   - git
   - osx
+
+dot_d_remote_scripts:
+  - src: https://iterm2.com/shell_integration/zsh
+    dest: 50-iterm2-integration
