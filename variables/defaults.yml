@@ -57,6 +57,24 @@ mac_defaults:
     type: int
     value: 2
 
+  # Disable autocorrect / auto capitalization
+  - domain: -globalDomain
+    key: WebAutomaticSpellingCorrectionEnabled
+    type: int
+    value: 0
+  - domain: -globalDomain
+    key: NSAutomaticCapitalizationEnabled
+    type: int
+    value: 0
+  - domain: -globalDomain
+    key: NSAutomaticPeriodSubstitutionEnabled
+    type: int
+    value: 0
+  - domain: -globalDomain
+    key: NSAutomaticSpellingCorrectionEnabled
+    type: int
+    value: 0
+
   # Trackpad settings
   - domain: NSGlobalDomain
     key: com.apple.trackpad.scaling
@@ -114,7 +132,7 @@ mac_defaults:
     key: UIVisibilityState
     type: int
     value: 10
-  
+
   # Activity Monitor
   - domain: com.apple.ActivityMonitor
     key: UpdatePeriod
