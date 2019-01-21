@@ -50,16 +50,15 @@ homebrew_cask_apps:
   - java
   - keeweb
   - keybase
+  - mongodb-compass
   - nextcloud
   - ngrok
   - openscad
   - poedit
-  - postico
   - prusa-slic3r
-  - sequel-pro
   - spectacle
   - sublime-text
-  - tableplus  # in testing stage
+  - tableplus
   - the-unarchiver
   - transmission
   - vagrant
