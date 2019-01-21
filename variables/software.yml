@@ -21,6 +21,7 @@ homebrew_apps:
   - lsusb
   - mariadb
   - mitmproxy
+  - mongodb
   - nginx
   - nmap
   - nodenv
