@@ -56,6 +56,7 @@ homebrew_cask_apps:
   - ngrok
   - openscad
   - poedit
+  - postman
   - prusa-slic3r
   - spectacle
   - sublime-text
