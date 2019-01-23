@@ -30,6 +30,7 @@ homebrew_apps:
   - postgresql
   - pv
   - qrencode
+  - redis
   - tree
   - watchman
   - wget
