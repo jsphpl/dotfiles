@@ -14,6 +14,7 @@ homebrew_apps:
   - awscli
   - composer
   - dnsmasq
+  - esptool
   - ffmpeg
   - heroku/brew/heroku
   - htop
@@ -31,6 +32,7 @@ homebrew_apps:
   - pv
   - qrencode
   - redis
+  - testdisk
   - tree
   - watchman
   - wget
@@ -40,6 +42,8 @@ homebrew_apps:
 
 # Apps installed through Homebrew Cask
 homebrew_cask_apps:
+  - android-file-transfer
+  - android-platform-tools
   - android-sdk
   - appcleaner
   - boostnote

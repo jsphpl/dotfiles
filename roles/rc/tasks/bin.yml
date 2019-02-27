@@ -1,0 +1,11 @@
+- name: "Ensure bin directory exists"
+  file:
+    path: "{{ bin_dir }}"
+    state: directory
+
+- name: Install remote bin scripts
+  get_url:
+    url: "{{ item.src }}"
+    dest: "{{ bin_dir }}/{{ item.dest }}"
+    mode: 0755
+  loop: "{{ bin_remote_files }}"

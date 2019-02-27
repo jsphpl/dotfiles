@@ -3,6 +3,7 @@
   connection: local
   vars_files:
     - variables/aliases.yml
+    - variables/bin.yml
     - variables/identity.yml
     - variables/paths.yml
     - variables/shell.yml
@@ -22,6 +23,6 @@
     - role: composer
       tags: [software, composer]
     - role: rc
-      tags: [rc]
+      tags: [rc, shell]
     - role: defaults
       tags: [defaults]
