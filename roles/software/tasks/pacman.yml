@@ -1,0 +1,12 @@
+- name: Install arch packages through pacman
+  pacman:
+    name: "{{ item }}"
+    state: present
+    update_cache: yes
+  loop: "{{ pacman_packages }}"
+  become: yes
+
+- name: Install AUR packages
+  aur:
+    name: "{{ item }}"
+  loop: "{{ aur_packages }}"

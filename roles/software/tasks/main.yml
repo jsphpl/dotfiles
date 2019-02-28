@@ -1,0 +1,10 @@
+- include_tasks: homebrew.yml
+  when: is_mac_os
+- include_tasks: mac-apps.yml
+  when: is_mac_os
+- include_role:
+    name: geerlingguy.mas
+  when: is_mac_os
+- include_tasks: pacman.yml
+  when: is_arch_linux
+- include_tasks: composer.yml

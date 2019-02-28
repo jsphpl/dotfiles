@@ -1,0 +1,88 @@
+# Sources for homebrew apps
+homebrew_taps:
+  - "caskroom/cask"
+  - "caskroom/versions"
+  - "homebrew/core"
+  - "jlhonora/lsusb"
+  - "osx-cross/avr"
+
+# Apps installed through Homebrew
+homebrew_apps:
+  - avr-binutils
+  - avr-gcc
+  - avrdude
+  - awscli
+  - composer
+  - dnsmasq
+  - esptool
+  - ffmpeg
+  - heroku/brew/heroku
+  - htop
+  - imagemagick
+  - lsusb
+  - mariadb
+  - mitmproxy
+  - mongodb
+  - nginx
+  - nmap
+  - nodenv
+  - php
+  - pkg-config
+  - postgresql
+  - pv
+  - qrencode
+  - redis
+  - testdisk
+  - tree
+  - watchman
+  - wget
+  - wp-cli
+  - youtube-dl
+  - zsh
+
+# Apps installed through Homebrew Cask
+homebrew_cask_apps:
+  - android-file-transfer
+  - android-platform-tools
+  - android-sdk
+  - appcleaner
+  - boostnote
+  - devdocs
+  - eloston-chromium  # ungoogled
+  - firefox-nightly
+  - gimp
+  - gpg-suite
+  - iterm2
+  - java
+  - keeweb
+  - keybase
+  - mongodb-compass
+  - nextcloud
+  - ngrok
+  - openscad
+  - poedit
+  - postman
+  - prusa-slic3r
+  - spectacle
+  - sublime-text
+  - tableplus
+  - the-unarchiver
+  - transmission
+  - vagrant
+  - virtualbox
+  - vlc
+
+# Apps installed through Mac app store
+mas_installed_apps:
+  - { id: 1179623856, name: "Pastebot" }
+  - { id: 747648890, name: "Telegram" }
+  - { id: 803453959, name: "Slack" }
+  - { id: 960276676, name: "Taurine" }
+  - { id: 496437906, name: "Shush" }
+
+# Locally copied mac apps
+mac_apps: []
+  # - path: /Volumes/nifty/Cloud/_shared/Mac Apps/sketch-43.2-39069.zip
+  #   creates: Sketch.app
+  # - path: /Volumes/nifty/Cloud/_shared/Mac Apps/Radio_Silence_2.3.pkg
+  #   creates: Radio Silence.app

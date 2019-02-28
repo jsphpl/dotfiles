@@ -2,27 +2,24 @@
   hosts: localhost
   connection: local
   vars_files:
+    - variables/helpers.yml
     - variables/aliases.yml
     - variables/bin.yml
     - variables/identity.yml
     - variables/paths.yml
     - variables/shell.yml
     - variables/software.yml
-    - variables/defaults.yml
+    - variables/linux/software.yml
+    - variables/mac/defaults.yml
+    - variables/mac/software.yml
   vars_prompt:
     - name: ansible_become_pass
       prompt: Sudo password needed for some tasks
       private: yes
   roles:
-    - role: homebrew
-      tags: [software, homebrew]
-    - role: mac-apps
-      tags: [software, mac-apps]
-    - role: geerlingguy.mas
-      tags: [software, mac-apps]
-    - role: composer
-      tags: [software, composer]
+    - role: software
+      tags: [software]
+    - role: mac-defaults
+      tags: [defaults]
     - role: rc
       tags: [rc, shell]
-    - role: defaults
-      tags: [defaults]

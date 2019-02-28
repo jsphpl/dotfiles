@@ -1,4 +1,4 @@
-login_shell: /usr/local/bin/zsh
+login_shell: "{{ '/usr/local/bin/zsh' if is_mac_os else '/usr/bin/zsh' }}"
 shell_rc: $HOME/.zshrc
 
 oh_my_zsh_dir: $HOME/.oh-my-zsh

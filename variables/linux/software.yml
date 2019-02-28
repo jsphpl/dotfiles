@@ -1,0 +1,14 @@
+pacman_packages:
+  - composer
+  - php
+  - php-fpm
+  - php-intl
+  - php-memcached
+  - redis
+  - memcached
+  - zsh
+  - zsh-completions
+  - zsh-autosuggestions
+
+aur_packages:
+  - beanstalkd

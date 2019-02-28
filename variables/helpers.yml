@@ -1,0 +1,3 @@
+is_mac_os: "{{  ansible_distribution == 'MacOSX' }}"
+is_linux: "{{ not is_mac_os }}"
+is_arch_linux: "{{ ansible_distribution == 'Archlinux' }}"
