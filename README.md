@@ -1,5 +1,5 @@
 # dotfiles
-> Joseph's Ansible-powered dotfiles (currently only for macOS)
+> Joseph's Ansible-powered dotfiles for macOS and Arch Linux
 
 ## Setup
 ```bash
