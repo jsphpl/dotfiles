@@ -1,8 +1,6 @@
 # Global composer packages
 composer_packages:
-  - laravel/installer
-  - laravel/valet
-  - phpunit/phpunit
+  - "{{ 'laravel/valet' if is_mac_os else 'cpriego/valet-linux' }}"
   - squizlabs/php_codesniffer
   - friendsofphp/php-cs-fixer
 

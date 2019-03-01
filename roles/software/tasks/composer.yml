@@ -5,12 +5,7 @@
     arguments: "{{ item }}"
   with_items: "{{ composer_packages }}"
 
-- name: Create composer directory for user
-  file:
-    name: $HOME/.composer
-    state: directory
-
 - name: Set global composer configuration options
   template:
     src: composer.json.j2
-    dest: $HOME/.composer/config.json
+    dest: "{{ composer_dir }}/config.json"

@@ -1,14 +1,25 @@
 pacman_packages:
   - composer
+  - inkscape
+  - jq
+  - memcached
+  - nginx
+  - otf-fira-code
   - php
   - php-fpm
+  - php-gd
   - php-intl
   - php-memcached
+  - php-pgsql
+  - php-sqlite
+  - postgresql
   - redis
-  - memcached
+  - xsel
   - zsh
-  - zsh-completions
   - zsh-autosuggestions
+  - zsh-completions
 
 aur_packages:
   - beanstalkd
+  - php-pear
+  - teamsql
