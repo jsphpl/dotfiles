@@ -2,6 +2,7 @@ composer_dir: "{{ '$HOME/.composer' if is_mac_os else '$HOME/.config/composer' }
 extra_paths:
   - "{{ bin_dir }}"
   - /usr/local/bin
+  - /opt/local/sbin
   - "{{ composer_dir }}/vendor/bin"
   - $HOME/.cargo/bin
   - $HOME/.gem/ruby/2.6.0/bin
