@@ -4,3 +4,8 @@
 function homestead() {
     ( cd ~/lib/vagrant/homestead && vagrant $* )
 }
+
+# Delete line from known_hosts file
+function rmkh() {
+    sed -i "$1d" $HOME/.ssh/known_hosts
+}
