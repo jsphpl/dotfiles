@@ -47,6 +47,7 @@ homebrew_cask_apps:
   - android-sdk
   - appcleaner
   - boostnote
+  - cyberduck
   - devdocs
   - eloston-chromium  # ungoogled
   - firefox-nightly
