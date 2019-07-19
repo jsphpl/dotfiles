@@ -1,0 +1,4 @@
+# {{ ansible_managed }}
+
+export PYTHONPATH=/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/platform/google_appengine:$PYTHONPATH
+export PATH=$PATH:/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin
