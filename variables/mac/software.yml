@@ -28,6 +28,7 @@ homebrew_apps:
   - nodenv
   - php
   - pkg-config
+  - platformio
   - postgresql
   - pv
   - qrencode
@@ -58,6 +59,7 @@ homebrew_cask_apps:
   - java
   - keeweb
   - keybase
+  - logicsniffer
   - mongodb-compass
   - nextcloud
   - ngrok
